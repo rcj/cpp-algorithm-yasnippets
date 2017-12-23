@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: unique_copy(InIt beg, InIt end, OutIt d_beg[, BinPred p]) -> OutIt
+# key: ucp
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::unique_copy(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}, ${4:`(rcj-cc-mode-std-prefix-for-file)`::begin(${5:output})}${6:, ${7:[](auto ${8:const& }lhs, auto $8rhs) { ${9:return lhs == rhs;} }}});$0

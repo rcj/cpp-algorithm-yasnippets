@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: reverse(BidIt beg, BidIt end) -> void
+# key: rev
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::reverse(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)});$0

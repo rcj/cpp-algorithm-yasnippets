@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: min_element(FwdIt beg, FwdIt end[, Cmp cmp]) -> FwdIt
+# key: mne
+# --
+auto ${1:pos} = `(rcj-cc-mode-std-prefix-for-file)`::min_element(${2:`(rcj-cc-mode-std-prefix-for-file)`::begin(${3:container})}, ${4:`(rcj-cc-mode-std-prefix-for-file)`::end($3)}${5:, ${6:[](auto ${7:const& }lhs, auto $7rhs) { ${8:return lhs < rhs;} }}});
+if ($1 != $4) {
+    $0
+}

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: merge(InIt1 beg1, InIt1 end1, InIt2 beg2, InIt2 end2, OutIt d_beg[, Cmp cmp]) -> OutIt
+# key: mrg
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::merge(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}, ${4:`(rcj-cc-mode-std-prefix-for-file)`::begin(${5:container2})}, ${6:`(rcj-cc-mode-std-prefix-for-file)`::end($5)}, ${7:`(rcj-cc-mode-std-prefix-for-file)`::begin(${8:output})}${9:, ${10:[](auto ${11:const& }lhs, auto $11rhs) { ${12:return lhs < rhs;} }}});$0

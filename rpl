@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: replace(FwdIt beg, FwdIt end, T const& old, T const& new) -> void
+# key: rpl
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::replace(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}, ${4:elem}, ${5:replacement});$0

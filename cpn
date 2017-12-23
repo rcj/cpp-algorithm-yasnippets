@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: copy_n(InIt beg, Size cnt, OutIt res) -> OutIt
+# key: cpn
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::copy_n(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:n}, ${4:`(rcj-cc-mode-std-prefix-for-file)`::begin(${5:container2})});$0

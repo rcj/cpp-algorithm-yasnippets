@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: all_of(InIt beg, InIt end, UnPred p) -> bool
+# key: alo
+# --
+${1:auto ${2:all} = }`(rcj-cc-mode-std-prefix-for-file)`::all_of(${3:`(rcj-cc-mode-std-prefix-for-file)`::begin(${4:container})}, ${5:`(rcj-cc-mode-std-prefix-for-file)`::end($4)}, ${6:[](auto ${7:const& }elem) { ${8:return elem == 42;} }});$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: generate(FwdIt beg, FwdIt end, Gen g) -> void
+# key: gnr
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::generate(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}, ${4:[]() { $5 }});$0

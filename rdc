@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: reduce(InIt beg, InIt end[, T init[, BinaryOp binop]]) -> T
+# key: rdc
+# --
+${1:auto ${2:v} = }`(rcj-cc-mode-std-prefix-for-file)`::reduce(${3:`(rcj-cc-mode-std-prefix-for-file)`::begin(${4:container})}, ${5:`(rcj-cc-mode-std-prefix-for-file)`::end($4)}${6:, ${7:init}${8:, ${9:[](auto ${10:const& }val, auto $10acc) { ${11:return val + acc;} }}}});$0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: find_end(FwdIt1 beg, FwdIt1 end, FwdIt2 s_beg, FwdIt2 s_end[, BinPred p]) -> FwdIt1
+# key: fne
+# --
+${1:auto ${2:pos} = }`(rcj-cc-mode-std-prefix-for-file)`::find_end(${3:`(rcj-cc-mode-std-prefix-for-file)`::begin(${4:container})}, ${5:`(rcj-cc-mode-std-prefix-for-file)`::end($4)}, ${6:`(rcj-cc-mode-std-prefix-for-file)`::begin(${7:container2})}, ${8:`(rcj-cc-mode-std-prefix-for-file)`::end($7)}${9:, ${10:[](auto ${11:const& }lhs, auto $11rhs) { ${12:return lhs == rhs;} }}});
+if (pos != $5) {
+  $0
+}

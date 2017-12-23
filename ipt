@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: is_partitioned(InIt beg, InIt end, UnPred p) -> bool
+# key: ipt
+# --
+${1:auto ${2:partitiond} = }`(rcj-cc-mode-std-prefix-for-file)`::is_partitioned(${3:`(rcj-cc-mode-std-prefix-for-file)`::begin(${4:container})}, ${5:`(rcj-cc-mode-std-prefix-for-file)`::end($4)}, [](auto ${6:const& }elem) { ${7:return elem == 42;} });$0

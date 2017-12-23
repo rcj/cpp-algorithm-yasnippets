@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: shuffle(RndIt beg, RndIt end, URBG&& g) -> void
+# key: shf
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::shuffle(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}, ${4:`(rcj-cc-mode-std-prefix-for-file)`::mt19937{`(rcj-cc-mode-std-prefix-for-file)`::random_device{}()}});$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: remove_copy(InIt beg, InIt end, OutIt d_beg, T const& val) -> OutIt
+# key: rmc
+# --
+${1:auto ${2:end} = }`(rcj-cc-mode-std-prefix-for-file)`::remove_copy(${3:`(rcj-cc-mode-std-prefix-for-file)`::begin(${4:container})}, ${5:`(rcj-cc-mode-std-prefix-for-file)`::end($4)}, ${6:`(rcj-cc-mode-std-prefix-for-file)`::begin(${7:output})}, ${8:elem});$0

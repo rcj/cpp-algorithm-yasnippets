@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: inplace_merge(BidIt beg, BidIt middle, BidIt end[, Cmp cmp]) -> void
+# key: imr
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::inplace_merge(${3:`(rcj-cc-mode-std-prefix-for-file)`::begin(${4:container})}, ${5:middle}, ${6:`(rcj-cc-mode-std-prefix-for-file)`::end($4)}${7:, ${8:[](auto ${9:const& }lhs, auto $9rhs) { ${10:return lhs < rhs;} }}});$0

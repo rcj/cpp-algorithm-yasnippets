@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: copy_backward(BidIt1 beg, BidIt1 end, BidIt2 d_end) -> BidIt2
+# key: cpb
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::copy_backward(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}, ${4:`(rcj-cc-mode-std-prefix-for-file)`::end(${5:container2})});$0

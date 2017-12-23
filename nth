@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: nth_element(RndIt beg, RndIt nth, RndIt end[, Cmp cmp]) -> void
+# key: nth
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::nth_element(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::begin($2) + ${4:n}}, ${5:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}${6:, ${7:[](auto ${8:const& }lhs, auto $8rhs) { ${9:return lhs < rhs;} }}});$0

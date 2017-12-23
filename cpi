@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: copy_if(InIt beg, InIt end, OutIt d_beg[, UnPred p]) -> OutIt
+# key: cpi
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::copy_if(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}, ${4:`(rcj-cc-mode-std-prefix-for-file)`::begin(${5:container2})}, ${6:[](auto ${7:const& }elem) { ${8:return elem == 42;} }});$0

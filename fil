@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: fill(FwdIt beg, FwdIt end, T const& value) -> void
+# key: fil
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::fill(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}, ${4:elem});$0

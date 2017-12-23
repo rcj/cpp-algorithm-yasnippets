@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iota(FwdIt beg, FwdIt end, T val) -> void
+# key: ita
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::iota(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}, ${4:n});$0

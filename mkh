@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: make_heap(RndIt beg, RndIt end[, Cmp cmp]) -> void
+# key: mkh
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::make_heap(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}${4:, ${5:[](auto ${6:const& }lhs, auto $6rhs) { ${7:return lhs < rhs;} }}});$0

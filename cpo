@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: copy to ostream_iterator
+# key: cpo
+# --
+`(rcj-cc-mode-std-prefix-for-file)`::copy(${1:`(rcj-cc-mode-std-prefix-for-file)`::begin(${2:container})}, ${3:`(rcj-cc-mode-std-prefix-for-file)`::end($2)}, `(rcj-cc-mode-std-prefix-for-file)`::ostream_iterator<typename `(rcj-cc-mode-std-prefix-for-file)`::iterator_traits<decltype($1)>::value_type>{`(rcj-cc-mode-std-prefix-for-file)`::cout, "$4"});$0
